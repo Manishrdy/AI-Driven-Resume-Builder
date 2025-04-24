@@ -77,14 +77,16 @@ Follow these steps to generate a tailored PDF/DOCX resume using your own data an
 ### 📦 Step 4: Install Requirements
 
 1. Run the following command to install all necessary dependencies:
-    - pip install -r requirements.txt
+    ```python
+    pip install -r requirements.txt
 
 ---
 
 ### 🏗️ Step 5: Generate Your Resume
 
 1. Run the following command
-    - python main.py -o filename
+    ```python
+    python main.py -o filename
 
 ---
 
