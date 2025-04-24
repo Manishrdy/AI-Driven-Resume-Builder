@@ -25,19 +25,19 @@ Transform a structured YAML resume into tailored, professional-grade PDF and DOC
 ---
 
 ## 📁 Project Structure
-```graphql
-ai-resume-builder/
-├── data/
-│   ├── resume.yaml              # ✅ Your YAML resume file (based on template.yaml)
-│   ├── template.yaml            # 📋 YAML structure template for reference
-│   ├── job_description.txt      # 📝 Paste the job description here
-│   └── resume.tex               # 🎨 Base LaTeX template
-├── config.yml                   # ⚙️ Edit this for your Perplexity API key and paths
-├── 1_parse_resume_yaml.py       # 🔁 Convert YAML to JSON (with field normalization)
-├── 3_resume_generator_tex.py    # 🛠️ Injects resume data into LaTeX template
-├── 4_tex_to_pdf.py              # 📄 Compiles LaTeX to PDF and converts to DOCX
-├── requirements.txt             # 📦 Dependencies list
-└── README.md                    # 📘 You’re here!
+    ```graphql
+    ai-resume-builder/
+    ├── data/
+    │   ├── resume.yaml              # ✅ Your YAML resume file (based on template.yaml)
+    │   ├── template.yaml            # 📋 YAML structure template for reference
+    │   ├── job_description.txt      # 📝 Paste the job description here
+    │   └── resume.tex               # 🎨 Base LaTeX template
+    ├── config.yml                   # ⚙️ Edit this for your Perplexity API key and paths
+    ├── 1_parse_resume_yaml.py       # 🔁 Convert YAML to JSON (with field normalization)
+    ├── 3_resume_generator_tex.py    # 🛠️ Injects resume data into LaTeX template
+    ├── 4_tex_to_pdf.py              # 📄 Compiles LaTeX to PDF and converts to DOCX
+    ├── requirements.txt             # 📦 Dependencies list
+    └── README.md                    # 📘 You’re here!
 
 ---
 
