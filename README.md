@@ -91,4 +91,11 @@ Follow these steps to generate a tailored PDF/DOCX resume using your own data an
 
 ---
 
+### 🖨️ LaTeX to PDF: Windows-Only Support
+1. 📥 Download MikTeX: https://miktex.org/download
+2. 🔧 Make sure to add xelatex to your system PATH.
+3. ⚠️ Currently, PDF generation is supported only on Windows using MikTeX.
+4. 🍏 For macOS, a .tex file is generated, but PDF must be compiled manually using an online editor like Overleaf.
+
+
 ### ✅ Done! Your Final Resume Is Ready
