@@ -25,7 +25,7 @@ Transform a structured YAML resume into tailored, professional-grade PDF and DOC
 ---
 
 ## 📁 Project Structure
-
+```graphql
 ai-resume-builder/
 ├── data/
 │   ├── resume.yaml              # ✅ Your YAML resume file (based on template.yaml)
