@@ -39,6 +39,7 @@ ai-resume-builder/
 ├── requirements.txt             # 📦 Dependencies list
 └── README.md                    # 📘 You’re here!
 
+---
 
 ## 🚀 How to Use This Project
 
