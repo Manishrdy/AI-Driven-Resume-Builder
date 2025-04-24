@@ -97,5 +97,9 @@ Follow these steps to generate a tailored PDF/DOCX resume using your own data an
 3. ⚠️ Currently, PDF generation is supported only on Windows using MikTeX.
 4. 🍏 For macOS, a .tex file is generated, but PDF must be compiled manually using an online editor like Overleaf.
 
+---
 
 ### ✅ Done! Your Final Resume Is Ready
+
+🙏 Credits
+- 📄 Resume template adapted from the [ASU Resume Template by Vignesh V Iyer on Overleaf.](https://www.overleaf.com/latex/templates/asu-resume-template/jtwpddspxjtm)
