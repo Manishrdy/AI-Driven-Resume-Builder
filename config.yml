@@ -1,0 +1,7 @@
+api_key: "YOUR-API-KEY"
+endpoint: "https://api.perplexity.ai/chat/completions"
+model: "sonar-pro"
+resume_yaml: "data/resume.yaml"
+job_description_file: "data/job_description.txt"
+latex_template: "data/resume.tex"
+template_yaml: "data/template.yaml"

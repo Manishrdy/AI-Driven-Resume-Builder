@@ -1,0 +1,66 @@
+# ─── BASICS ───────────────────────────────────────────────────────────
+basics:
+  name: John Doe                        # Your full name
+  headline: Full‑Stack Developer         # Your professional title or headline
+  email: john.doe@gmail.com              # Your email address
+  phone: "+1‑555‑123‑4567"                # Your phone number (with country code)
+  location:
+    city: Bengaluru                      # City of residence
+    region: KA                           # Region/State
+    country: India                       # Country
+  urls:
+    linkedin: https://linkedin.com/in/johndoe  # URL to your LinkedIn profile
+    github:   https://github.com/johndoe         # URL to your GitHub profile
+  summary: |                              # A brief professional summary (multiline supported)
+    3 years building B2B SaaS with React, Node, AWS.
+    Passionate about shipping and innovative product development.
+
+# ─── EDUCATION (0‒N) ──────────────────────────────────────────────────
+education:
+  - institution: IIT Bombay              # Name of the institution
+    degree: B.Tech                       # Degree (e.g., B.Tech, MSc, etc.)
+    field: Computer Science & Engineering  # Field/major
+    start: 2017-07                       # Start date (ISO‑8601 format, YYYY-MM)
+    end:   2021-05                       # End date (ISO‑8601 format or "present" if ongoing)
+    gpa:   8.7/10                        # GPA or score (optional)
+
+# ─── WORK EXPERIENCE (0‒N) ────────────────────────────────────────────
+work:
+  - company: Stripe                      # Company name
+    position: Software Engineer II       # Your position/title
+    location: Bengaluru                   # Work location
+    start: 2022-03                       # Start date (YYYY-MM)
+    end:   present                       # End date or "present"
+    highlights:                          # Key achievements/highlights in this role
+      - Cut API latency 35 % by migrating to gRPC and introducing Redis caching.
+      - Mentored 4 interns; 2 converted to FTE.
+  - company: Acme Inc
+    position: Backend Engineer
+    location: Bengaluru
+    start: 2021-06
+    end:   2022-02
+    highlights:
+      - Built CI/CD pipeline (GitHub Actions → EKS) that reduced deploy time 60 %.
+
+# ─── PROJECTS (0‒N) ──────────────────────────────────────────────────
+projects:
+  - name: ChatOps Platform               # Project name
+    url: https://github.com/johndoe/chatops   # Project URL (if available)
+    start: 2020-10                       # Start date (YYYY-MM)
+    end:   2021-02                       # End date (YYYY-MM)
+    highlights:
+      - Slack bot that triggers Jenkins pipelines, built with FastAPI & Socket.IO.
+
+# ─── CERTIFICATIONS / AWARDS / HOBBIES (OPTIONAL) ─────────────────────
+certifications:
+  - name: AWS Certified Developer – Associate  # Certification or award name
+    issuer: Amazon                             # Issuing organization
+    date: 2022-09                              # Date of certification/award
+
+# ─── SKILLS ────────────────────────────────────────────────────────────
+skills: 
+  - programming_languages: Python, JavaScript, Node.js, Java
+  - web_technologies: REST APIs, Microservices (Spring Boot), Flask
+  - database: MySQL, MongoDB, H2
+  - cloud: AWS Services (EC2, S3, CloudWatch), Azure Serverless Functions
+  - fundementals: Data Structures & Algorithms, OOP, Agile methodologies

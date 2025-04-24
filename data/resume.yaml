@@ -1,0 +1,76 @@
+# ─── BASICS ───────────────────────────────────────────────────────────
+basics:
+  name: John Doe                        # Your full name
+  headline: Full‑Stack Developer         # Your professional title or headline
+  email: john.doe@gmail.com              # Your email address
+  phone: "+1‑555‑123‑4567"                # Your phone number (with country code)
+  location:
+    city: Bengaluru                     # City of residence
+    region: KA                           # Region/State
+    country: India                       # Country
+  urls:
+    linkedin: https://linkedin.com/in/johndoe  # URL to your LinkedIn profile
+    github:   https://github.com/johndoe         # URL to your GitHub profile
+  summary: |                              # A brief professional summary (single line only)
+    3 years building B2B SaaS with React, Node, AWS. Passionate about shipping and innovative product development.
+
+# ─── EDUCATION (0‒N) ──────────────────────────────────────────────────
+education:
+  - institution: IIT Bombay              # Name of the institution
+    degree: B.Tech                       # Degree (e.g., B.Tech, MSc, etc.)
+    field: Computer Science & Engineering  # Field/major
+    start: 2017-07                       # Start date (ISO‑8601 format, YYYY-MM)
+    end:   2021-05                       # End date (ISO‑8601 format or "present" if ongoing)
+    gpa:   8.7/10                        # GPA or score (optional)
+
+# ─── WORK EXPERIENCE (0‒N) ────────────────────────────────────────────
+work:
+  - company: Stripe                      # Company name
+    position: Software Engineer II       # Your position/title
+    location: Bengaluru                  # Work location
+    start: 2022-03                       # Start date (YYYY-MM)
+    end:   present                       # End date or "present"
+    highlights:                          # Key achievements/highlights in this role
+      - Reduced API latency by 35% by migrating legacy HTTP endpoints to gRPC and implementing Redis-based caching.
+      - Mentored 4 engineering interns, 2 of whom converted to full-time employees, contributing to team growth and onboarding success.
+      - Optimized service performance by profiling bottlenecks and tuning asynchronous gRPC handlers, reducing request queue backlog by 50%.
+      - Collaborated with product and infrastructure teams to redesign payment microservices, increasing throughput by 20% under high-load scenarios.
+      - Led weekly code reviews and design sessions, improving team delivery velocity by 15% and enforcing engineering best practices.
+  - company: Acme Inc
+    position: Backend Engineer
+    location: Bengaluru
+    start: 2021-06
+    end:   2022-02
+    highlights:
+      - Built CI/CD pipeline using GitHub Actions and EKS, reducing deployment time by 60% and improving release frequency for microservices architecture.
+      - Integrated automated testing and monitoring into the pipeline, decreasing post-deployment failures by 45% and enhancing production reliability.
+      - Refactored legacy backend services, improving API response times by 35% and boosting server efficiency across Kubernetes-managed workloads.
+      - Collaborated with DevOps and QA teams to containerize backend systems using Docker and Helm, reducing onboarding time for new services by 50%.
+      - Implemented secure environment variable management and secrets rotation, improving infrastructure compliance and minimizing downtime risk by 30%.
+
+# ─── PROJECTS (0‒N) ──────────────────────────────────────────────────
+projects:
+  - name: ChatOps Platform               # Project name
+    url: https://github.com/johndoe/chatops   # Project URL (if available)
+    start: 2020-10                       # Start date (YYYY-MM)
+    end:   2021-02                       # End date (YYYY-MM)
+    highlights:
+      - Built a Slack bot using FastAPI and Socket.IO to trigger Jenkins pipelines, reducing manual deployment steps by 70%.
+      - Integrated OAuth 2.0 and role-based access control, improving deployment security and reducing unauthorized triggers by 90%.
+      - Optimized real-time communication with WebSocket events, decreasing response latency by 40% under concurrent user load.
+      - Deployed the platform on Docker containers with CI/CD support, enabling seamless updates and rollback within 5 minutes.
+      - Documented setup and usage for DevOps teams, reducing onboarding time for new users by 60%.
+
+# ─── CERTIFICATIONS / AWARDS / HOBBIES (OPTIONAL) ─────────────────────
+certifications:
+  - name: AWS Certified Developer – Associate  # Certification or award name
+    issuer: Amazon                             # Issuing organization
+    date: 2022-09                              # Date of certification/award
+
+# ─── SKILLS ────────────────────────────────────────────────────────────
+skills: 
+  - Programming Languages: Python, JavaScript, Node.js, Java
+  - Web Technologies: REST APIs, Microservices (Spring Boot), Flask
+  - Database: MySQL, MongoDB, H2
+  - Cloud Platforms: AWS Services (EC2, S3, CloudWatch), Azure Serverless Functions
+  - Software Fundementals: Data Structures & Algorithms, OOP, Agile methodologies

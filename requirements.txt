@@ -1,0 +1,4 @@
+PyYAML
+requests
+pdf2docx
+argparse
