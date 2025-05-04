@@ -16,6 +16,7 @@ import json
 import os
 import yaml
 import argparse
+import re
 
 def load_config(config_path="config.yml"):
     with open(config_path, "r", encoding="utf-8") as f:
@@ -192,6 +193,11 @@ def main():
         "skills": skills //Add skills variable here.
     }}
 
+    IMPORTANT:
+    - Return ONLY the final JSON inside a code block like ```json ... ``` without any explanations, thoughts, or commentary.
+    - DO NOT include <think> tags, analysis, or any other text outside the JSON.
+    - ONLY output pure JSON.
+
 
     Below is the content of my resume in json format, in the variable "my_resume":
     my_resume = {my_resume}
@@ -206,15 +212,30 @@ def main():
     # Call the external API with the prompt.
     response = ask_perplexity(prompt, config)
 
-    #log api response
-    print('Perplexity Api call - {}'.format(response))
+    # Log full raw API response for debugging
+    print('Perplexity raw response:', response)
+
+    # Validate structure
+    if 'choices' not in response or not response['choices']:
+        raise ValueError(f"API call did not return expected 'choices'. Full response: {response}")
+
     
     # Parse the API response.
-    content_str = response['choices'][0]['message']['content']
-    if content_str.strip().startswith('"output":'):
-        content_str = '{' + content_str.strip() + '}'
-    parsed_output = json.loads(content_str)
-    
+    content_str = response['choices'][0]['message'].get('content', '').strip()
+
+    # Try to extract the JSON block safely
+    matches = re.findall(r'```json\s*(\{.*?\})\s*```', content_str, re.DOTALL)
+
+    if matches:
+        json_block = matches[0]
+        parsed_output = json.loads(json_block)
+    else:
+        # Fall back to original style if no triple-backtick found
+        if content_str.strip().startswith('"output":'):
+            content_str = '{' + content_str.strip() + '}'
+        
+        parsed_output = json.loads(content_str)
+        
     summary = parsed_output['output']['summary']
     work = parsed_output['output']['work']
     projects = parsed_output['output']['projects']
