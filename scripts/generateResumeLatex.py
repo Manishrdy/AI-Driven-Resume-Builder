@@ -155,10 +155,14 @@ def generate_project_items(proj_list):
     for idx, proj in enumerate(proj_list):
         title = proj.get("name", "")
         duration = format_date(proj.get("start", "")) + " - " + format_date(proj.get("end", ""))
+        url = proj.get("url", "")
+        # key_highlight = f"GitHub - \\href{{{url}}}{{Link}}" if url else ""
+        key_highlight = f"GitHub - {url}" if url else ""  # ← new: full plain URL
         header = (
             "\\projectItem[\n"
-            "    title={" + title + "},\n"
-            "    duration={" + duration + "}\n"
+            f"    title={{{title}}},\n"
+            f"    duration={{{duration}}},\n"
+            f"    keyHighlight={{{key_highlight}}}\n"
             "]"
         )
         bullets = ""

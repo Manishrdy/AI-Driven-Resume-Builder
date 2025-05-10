@@ -209,6 +209,8 @@
         \commandkey{title}%
     } \hfill {%
         \commandkey{duration}%
+    } \\ {%
+        \commandkey{keyHighlight}%
     }
 }%
 
